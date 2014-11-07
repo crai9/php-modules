@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 #container {
 	width: 1000px;
 	margin: auto;
@@ -9,6 +10,8 @@
 html, body {
 	margin: 0;
 	padding: 0;
+    background: url(http://subtlepatterns.com/patterns/bright_squares.png);
+}
 }
 
 .hidden {
@@ -19,7 +22,6 @@ body {
 	font-family: Verdana, Helvetica, Sans-serif;
 	font-size: 12px;
 	color: #000000;
-	background: #ffffff;
     line-height: 1.88889;
 }
 
@@ -29,7 +31,7 @@ body {
 
 #header {
 	height: 100px;
-	border-bottom: 1px Blue solid;	
+	border-bottom: 1px Black solid;	
 }
 
 #header h1
@@ -50,7 +52,7 @@ body {
 	float: right;
 	width: 180px;
 	line-height: 18px;	
-	border-left: 1px Blue solid;	
+	border-left: 1px Black solid;	
 }
 
 #sidebar li {
@@ -82,7 +84,7 @@ h1,h2 {
 
 ul#menu
 {
-    border-bottom: 1px Blue solid;
+    border-bottom: 1px Black solid;
     padding: 0 0 2px;
     /* position: relative; */
     margin: 0;
@@ -112,21 +114,21 @@ ul#menu li a
     font-weight: bold;
     text-decoration: none;
     line-height: 2.8em;
-    background-color: Blue;
-    color: LightGreen;   
+    background-color: Red;
+    color: Black;   
 }
 
 ul#menu li a:hover
 {
-    background-color: #a6e2a6;
-	color: DarkGreen;
+    background-color: Black;
+	color: White;
     text-decoration: none;
 }
 
 ul#menu li a:active
 {
     background-color: #a6e2a6;
-	color: DarkGreen;
+	color: Black;
     text-decoration: none;
 }
 
@@ -270,7 +272,7 @@ div.grid
 
 .grid .album .albumdetails .albumtitle
 {
-	color: Blue;
+	color: Black;
 }
 
 .grid .album .albumdetails .artist
@@ -318,7 +320,7 @@ div.grid
 {
     text-align: left;
     font: italic normal bold 2.1em "New Century Schoolbook", georgia, sans-serif;
-    color: Blue;
+    color: Black;
 }
 
 #leftItemTemplate h3
