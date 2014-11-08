@@ -8,7 +8,8 @@
 		{section name=i loop=$obj->mModules}
 		<li>
 			{* Generate a new module in the list *}		
-				{$obj->mModules[i].module_title}
+				<a href='?op=Details&module_id={$obj->mModules[i].module_id}'>{$obj->mModules[i].module_title}
+				</a>
 		</li>
 		{/section}
 		</ul>

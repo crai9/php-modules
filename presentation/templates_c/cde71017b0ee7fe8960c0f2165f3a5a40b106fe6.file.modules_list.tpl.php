@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-07 09:50:15
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-08 14:31:40
          compiled from "/vagrant/modules/presentation/templates/modules_list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:697488691545c95d7ce54f3-28682689%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'cde71017b0ee7fe8960c0f2165f3a5a40b106fe6' => 
     array (
       0 => '/vagrant/modules/presentation/templates/modules_list.tpl',
-      1 => 1414583736,
+      1 => 1415457005,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_545c95d7d4f0c5_93287210',
   'variables' => 
   array (
     'obj' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_545c95d7d4f0c5_93287210',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_545c95d7d4f0c5_93287210')) {function content_545c95d7d4f0c5_93287210($_smarty_tpl) {?><?php if (!is_callable('smarty_function_load_presentation_object')) include '/vagrant/modules/presentation/smarty_plugins/function.load_presentation_object.php';
 ?>
@@ -58,8 +58,10 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 ?>
 		<li>
 					
-				<?php echo $_smarty_tpl->tpl_vars['obj']->value->mModules[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['module_title'];?>
+				<a href='?op=Details&module_id=<?php echo $_smarty_tpl->tpl_vars['obj']->value->mModules[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['module_id'];?>
+'><?php echo $_smarty_tpl->tpl_vars['obj']->value->mModules[$_smarty_tpl->getVariable('smarty')->value['section']['i']['index']]['module_title'];?>
 
+				</a>
 		</li>
 		<?php endfor; endif; ?>
 		</ul>
