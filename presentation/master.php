@@ -41,7 +41,7 @@ class Master
 		}
 		elseif ($this->currentPage == 'ModuleLeaders')
 		{
-			$this->mContents = 'not_implemented.tpl';
+			$this->mContents = 'module_leader_list.tpl';
 			$this->mSideBar = 'modules_list.tpl';
 		}
 		else
