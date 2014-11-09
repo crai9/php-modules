@@ -57,8 +57,8 @@ define('FT_MIN_WORD_LEN', 4);
 define('USE_SSL', 'yes');
 
 // Administrator login information
-define('MODULEADMIN_USERNAME', 'modulesadmin');
-define('MODULEADMIN_PASSWORD', 'modulesadmin');
+define('MODULEADMIN_USERNAME', '1');
+define('MODULEADMIN_PASSWORD', '2');
 define('STUDENTADMIN_USERNAME', 'studentadmin');
 define('STUDENTADMIN_PASSWORD', 'studentadmin');
 ?>

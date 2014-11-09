@@ -8,9 +8,9 @@
 		<div id='leftItemTemplate'>
 			<p><img width='300px'src='./images/{$obj->mModule.module_image}' alt='{$obj->mModule.module_title} Module Image' /></p>
 			<h3>Module's Category</h3>
-			<h4>{$obj->mModule.module_category}</h4>
+			<h4><a href='index.php?op=Filter&category={$obj->mModule.module_category}'>{$obj->mModule.module_category}</a></h4>
 			<h3>Module's Leader</h3>
-			<h4>{$obj->mModule.module_leader}</h4>
+			<h4><a href="Index.php?op=Search&searchText={$obj->mModule.module_leader}">{$obj->mModule.module_leader}</a></h4>
 			
 		</div>
 		<div id='rightItemTemplate'>

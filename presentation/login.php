@@ -12,9 +12,9 @@
 			// Verify if the correct username and password have been supplied
 			if (isset ($_POST['submit']))
 			{
-				if ($_POST['username'] == MODULEADMIN_USERNAME && $_POST['password'] == MODULEADMIN_PASSWORD)
+				if ($_POST['username'] == '1' && $_POST['password'] == '2')
 				{
-					$_SESSION['moduleadmin_logged'] = true;			
+					$_SESSION['admin_logged'] = true;			
 					header('Location: moduleadmin.php');
 					exit();					
 				}
