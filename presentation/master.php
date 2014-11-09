@@ -36,8 +36,13 @@ class Master
 		}
 		elseif ($this->currentPage == 'Details' || $this->currentPage == 'Rate')
 		{
-			$this->mContents = 'album_details.tpl';
-			$this->mSideBar = 'albumratings_list.tpl';
+			$this->mContents = 'module_details.tpl';
+			$this->mSideBar = 'modules_ordered_list.tpl';
+		}
+		elseif ($this->currentPage == 'ModuleLeaders')
+		{
+			$this->mContents = 'not_implemented.tpl';
+			$this->mSideBar = 'modules_list.tpl';
 		}
 		else
 		{

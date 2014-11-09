@@ -18,6 +18,10 @@ html, body {
 	display: none;
 }
 
+.choice {
+    cursor: pointer;
+}
+
 body {
 	font-family: Verdana, Helvetica, Sans-serif;
 	font-size: 12px;
@@ -36,14 +40,14 @@ body {
 
 #header h1
 {
-    font: italic normal bold 2.5em Monotype Corsiva, georgia, sans-serif;
+    font: normal bold 2.5em Monotype Corsiva, georgia, sans-serif;
 	text-align: center;
 	color: Blue;
 }
 
 #header h2
 {
-    font:italic normal 2.1em Monotype Corsiva, georgia, sans-serif;
+    font: normal 2.1em Monotype Corsiva, georgia, sans-serif;
 	text-align: center;
 	color: DarkGreen;
 }
@@ -296,6 +300,61 @@ div.grid
 .grid .album .image:hover  .albumdetails
 {
     visibility: visible;
+}
+
+div.list
+{
+    background-color: White;
+    width: 700px;
+    margin-top: 10px;
+}
+
+.list .album
+{
+    height: 60px;
+    padding-left: 5px;
+}
+
+.list .album:nth-of-type(odd) {
+    background: LightGreen;
+}
+
+.list .album a
+{
+    text-decoration: none;  
+}
+
+.list .album img
+{
+    height: 50px;
+    width: 50px;
+    box-shadow: 2px 2px 2px #111;
+    margin-top: 4px;
+}
+
+.list .album .albumdetails
+{
+    visibility: visible;
+    display: inline;
+    margin-left: 25px;
+    font-family: Tacoma;
+    font-size: 1.5em;
+    text-decoration: none;
+    vertical-align: super;
+}
+
+.list .album .albumdetails .albumtitle
+{
+    color: Purple;
+    display: inline-block;
+    width: 50%;
+}
+
+.list .album .albumdetails .artist
+{
+    color: Green;
+    display: inline-block;
+    width: 35%;
 }
 
 #searchBox

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-08 17:37:15
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-09 02:32:24
          compiled from "/vagrant/modules/presentation/templates/modules_set.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2058922210545c95d7da61a2-04560748%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3bc6e07d79c2556295dd43a1630a981f20040f0b' => 
     array (
       0 => '/vagrant/modules/presentation/templates/modules_set.tpl',
-      1 => 1415468213,
+      1 => 1415500316,
       2 => 'file',
     ),
   ),
@@ -29,6 +29,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <?php if ($_smarty_tpl->tpl_vars['obj']->value->mModules){?>
+	<div id="styleChoice" >
+		<div id="gridView" class="hidden" onclick="toggleView()">
+			<img src="./images/grid.png" class="choice" alt="Grid View" />
+		</div>
+	</div>
 	<div id="main" class="grid">
 		<div class="modules">
 		

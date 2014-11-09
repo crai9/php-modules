@@ -8,6 +8,7 @@
 	<meta name="author" content="Martin L Gallacher" />
 	<meta name="keywords" content="Module, Catalogue" />
 	<meta name="description" content="Module Catalogue" />
+	<link rel="icon" href="./images/icon.png">
 	<link rel="stylesheet" type="text/css" href="./Styles/styles2014.css"
 	    title="Default" media="all" />
 <!-- 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"

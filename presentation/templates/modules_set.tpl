@@ -2,6 +2,11 @@
 {load_presentation_object filename="modules_set" assign="obj"}
 
 {if $obj->mModules}
+	<div id="styleChoice" >
+		<div id="gridView" class="hidden" onclick="toggleView()">
+			<img src="./images/grid.png" class="choice" alt="Grid View" />
+		</div>
+	</div>
 	<div id="main" class="grid">
 		<div class="modules">
 		{* Loop through the set of modules *}
