@@ -23,13 +23,13 @@
 	</div>
 {/if}
 {if count($obj->mModuleListPages) > 0}
-<script>
-console.log('accessed pagination')
-</script>
-   <div id="paginationDiv">
+
+<nav>
+   <div class='' id='paginationDiv'>
+   
       {if $obj->mLinkToPreviousPage}
          <a href="{$obj->mLinkToPreviousPage}">
-            Previous page</a>
+            &laquo</a>
       {/if}
 
       {section name=m loop=$obj->mModuleListPages}
@@ -42,7 +42,9 @@ console.log('accessed pagination')
       {/section}
 
       {if $obj->mLinkToNextPage}
-          <a href="{$obj->mLinkToNextPage}">Next page</a>
+          <a href="{$obj->mLinkToNextPage}">&raquo</a>
       {/if}
+      
    </div>
+   </nav>
 {/if}

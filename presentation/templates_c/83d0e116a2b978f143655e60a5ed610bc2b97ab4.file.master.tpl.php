@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-07 09:50:15
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-08 17:37:45
          compiled from "/vagrant/modules/presentation/templates/master.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:166014188545c95d7998443-90863241%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '83d0e116a2b978f143655e60a5ed610bc2b97ab4' => 
     array (
       0 => '/vagrant/modules/presentation/templates/master.tpl',
-      1 => 1414583736,
+      1 => 1415468247,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_545c95d7b5ccb5_23800399',
   'variables' => 
   array (
     'obj' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_545c95d7b5ccb5_23800399',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_545c95d7b5ccb5_23800399')) {function content_545c95d7b5ccb5_23800399($_smarty_tpl) {?><?php if (!is_callable('smarty_function_load_presentation_object')) include '/vagrant/modules/presentation/smarty_plugins/function.load_presentation_object.php';
 ?>
@@ -37,6 +37,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<meta name="description" content="Module Catalogue" />
 	<link rel="stylesheet" type="text/css" href="./Styles/styles2014.css"
 	    title="Default" media="all" />
+<!-- 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+	    title="Default" media="all" /> -->
 	<script src="./scripts/modules2014.js"></script>		
 	<title><?php echo $_smarty_tpl->getConfigVariable('site_title');?>
 </title>

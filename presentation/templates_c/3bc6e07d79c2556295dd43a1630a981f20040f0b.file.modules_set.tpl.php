@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-08 15:29:44
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-08 17:37:15
          compiled from "/vagrant/modules/presentation/templates/modules_set.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2058922210545c95d7da61a2-04560748%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3bc6e07d79c2556295dd43a1630a981f20040f0b' => 
     array (
       0 => '/vagrant/modules/presentation/templates/modules_set.tpl',
-      1 => 1415460200,
+      1 => 1415468213,
       2 => 'file',
     ),
   ),
@@ -78,14 +78,14 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['i']['last']       = ($_smart
 	</div>
 <?php }?>
 <?php if (count($_smarty_tpl->tpl_vars['obj']->value->mModuleListPages)>0){?>
-<script>
-console.log('accessed pagination')
-</script>
-   <div id="paginationDiv">
+
+<nav>
+   <div class='' id='paginationDiv'>
+   
       <?php if ($_smarty_tpl->tpl_vars['obj']->value->mLinkToPreviousPage){?>
          <a href="<?php echo $_smarty_tpl->tpl_vars['obj']->value->mLinkToPreviousPage;?>
 ">
-            Previous page</a>
+            &laquo</a>
       <?php }?>
 
       <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['m'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['m']);
@@ -125,7 +125,9 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['m']['last']       = ($_smart
 
       <?php if ($_smarty_tpl->tpl_vars['obj']->value->mLinkToNextPage){?>
           <a href="<?php echo $_smarty_tpl->tpl_vars['obj']->value->mLinkToNextPage;?>
-">Next page</a>
+">&raquo</a>
       <?php }?>
+      
    </div>
+   </nav>
 <?php }?><?php }} ?>

@@ -21,21 +21,55 @@ class Master
 		// Load Business Tier
 		require_once BUSINESS_DIR . 'business.php';
 
-
- 		if ($this->currentPage == 'Home' || $this->currentPage == 'Modules')
+		if ($this->currentPage == 'Home' || $this->currentPage == 'Modules' || $this->currentPage == 'Filter' || $this->currentPage == 'Search')
 		{
 			$this->mContents = 'modules_set.tpl';
 			if ($this->currentPage == 'Home')
 				$this->mSideBar = 'modules_list.tpl';
 			else
-				// should probably be categories - implement...
 				$this->mSideBar = 'categories_list.tpl';
+		}
+		elseif ($this->currentPage == 'Modules')
+		{
+			$this->mContents = 'modules_set.tpl';
+			$this->mSideBar = 'categories_list.tpl';
+		}
+		elseif ($this->currentPage == 'Details' || $this->currentPage == 'Rate')
+		{
+			$this->mContents = 'album_details.tpl';
+			$this->mSideBar = 'albumratings_list.tpl';
 		}
 		else
 		{
 			$this->mContents = 'not_implemented.tpl';
-			$this->mSideBar = 'modules_list.tpl';
+			$this->mSideBar = 'not_implemented.tpl';
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+ 	// 	if ($this->currentPage == 'Home' || $this->currentPage == 'Modules')
+		// {
+		// 	$this->mContents = 'modules_set.tpl';
+		// 	if ($this->currentPage == 'Home')
+		// 		$this->mSideBar = 'modules_list.tpl';
+		// 	else
+		// 		// should probably be categories - implement...
+		// 		$this->mSideBar = 'categories_list.tpl';
+		// }
+		// else
+		// {
+		// 	$this->mContents = 'not_implemented.tpl';
+		// 	$this->mSideBar = 'modules_list.tpl';
+		// }
 	}
 }
 ?>

@@ -10,6 +10,8 @@
 	<meta name="description" content="Module Catalogue" />
 	<link rel="stylesheet" type="text/css" href="./Styles/styles2014.css"
 	    title="Default" media="all" />
+<!-- 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"
+	    title="Default" media="all" /> -->
 	<script src="./scripts/modules2014.js"></script>		
 	<title>{#site_title#}</title>
 </head>

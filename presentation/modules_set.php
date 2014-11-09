@@ -21,22 +21,24 @@
 			{
 			   $this->mPage = (int)$_GET['Page'];
 			}
+			// Get Category from query string
+			if (isset ($_GET['category']))
+			{
+			   $this->mCategory = $_GET['category'];
+			}
+			// Retrieve search string from query string or posted form
+			if ($this->mCurrentPage == 'Search' || $this->mCurrentPage == 'Filter')
+			{
+			    if (isset ($_GET['searchText']))
+			       $this->mSearchString = $_GET['searchText'];
+			    elseif (isset ($_POST['searchText']))
+			       $this->mSearchString = trim($_POST['searchText']);
+			}
 		}
 
 		public function init()
 		{
-			// //page select
-			// if ($this->mCurrentPage == 'Modules')
-			// {
-			// 	$this->mModules = Business::GetModules();
-			// }
-			// elseif ($this->mCurrentPage == 'Home')
-			// {
-			// 	$this->mModules = Business::GetRandomModules();
-			// }
-			// //end page select
 
-			//start copy pasta
 
 			if ($this->mCurrentPage == 'Modules' || $this->mCurrentPage == 'Filter' || $this->mCurrentPage == 'Search')
 			{
@@ -68,8 +70,6 @@
 			{
 				$this->mModules = Business::GetRandomModules();
 			}
-
-			//end copy pasta
 
 			/* If there are subpages of modules, display navigation controls */
 			if ($this->mrTotalPages > 1)
