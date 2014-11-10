@@ -353,6 +353,19 @@ class Business
     // Execute the query
     DatabaseHandler::Execute($sql, $params);
   }
+
+  // Delete Module
+  public static function DeleteModule($moduleId)
+  {
+    // Build the SQL query
+    $sql = 'CALL delete_module(:module_id)';
+
+    // Build the parameters array
+    $params = array (':module_id' => $moduleId);
+
+    // Execute the query
+    DatabaseHandler::Execute($sql, $params);
+  }
   
   // Updates module details
   public static function UpdateModule($moduleId, $moduleTitle, $moduleLeader, $moduleDescription, $image, $category)

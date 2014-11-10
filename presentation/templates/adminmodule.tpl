@@ -71,13 +71,13 @@
 			</div>
 			</form>
 		</div>
-		{if $obj->mModules}
+		{if $obj->mLeaders}
 			<div id='rightItemTemplate'>
-				<h3>Find Album to Update</h3>
+				<h3>Find Module to Update</h3>
 				<form method="post" action="moduleadmin.php">
 				<div>
 					<p>
-						<select name="artists">
+						<select name="leaders">
 							<option>Select Leader</option>
 							{* Loop through the list of artists *}
 							{section name=i loop=$obj->mLeaders}
@@ -87,12 +87,59 @@
 						</select>
             				</p>
 					<p>
-						<input type="submit" name="submit_select_artist" value="Select Artist" />        
+						<input type="submit" name="submit_select_leader" value="Select Leader" />        
 					</p>
 				</div>
 				</form>
 			</div> 
 		{/if}
+		<div>
+			{if $obj->mModules}
+			<div id='rightItemTemplate'>
+				<form method="post" action="moduleadmin.php">
+				<div>
+					<p>
+						<select name="update_id">
+							<option>Select Module</option>
+							{* Loop through the list of artists *}
+							{section name=i loop=$obj->mLeaders}
+								{* Generate a new artist in the list *}
+								<option value="{$obj->mModules[i].module_id}">{$obj->mModules[i].module_title}</option>
+							{/section}        
+						</select>
+            				</p>
+					<p>
+						<input type="submit" name="submit_select_module" value="Select Module" />        
+					</p>
+				</div>
+				</form>
+			</div> 
+		{/if}
+		<div>
+			{if $obj->mDelModules}
+			<div id='rightItemTemplate'>
+				<h3>Find Module to Delete</h3>
+				<form method="post" action="moduleadmin.php">
+				<div>
+					<p>
+						<select name="delete_id">
+							<option>Select Module</option>
+							{* Loop through the list of artists *}
+							{section name=i loop=$obj->mLeaders}
+								{* Generate a new artist in the list *}
+								<option value="{$obj->mDelModules[i].module_id}">{$obj->mDelModules[i].module_title}</option>
+							{/section}        
+						</select>
+            				</p>
+					<p>
+						<input type="submit" name="submit_delete_module" value="Delete Module" />        
+					</p>
+				</div>
+				</form>
+			</div> 
+		{/if}
+		</div>
+		</div>
 	{/if}
   </div>
 </body>

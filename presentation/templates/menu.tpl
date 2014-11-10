@@ -15,7 +15,7 @@
 		<a id="Menu_ModuleAdminLink" href="moduleadmin.php">Module Admin</a>
 	</li>     
 	<li>
-		<a id="Menu_StudentAdminLink" href="studentadmin.php">Student Admin</a>
+		<a id="Menu_StudentAdminLink" href="#">Student Admin</a>
 	</li>   	
 	</ul>
 </div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-11-07 09:50:15
+<?php /* Smarty version Smarty-3.1.14, created on 2014-11-10 01:39:14
          compiled from "/vagrant/modules/presentation/templates/menu.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1490287128545c95d7c6bdf7-78777373%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a3f5d603661a89273707d9f69543c6c2b6e45cc5' => 
     array (
       0 => '/vagrant/modules/presentation/templates/menu.tpl',
-      1 => 1414583736,
+      1 => 1415583543,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.14',
   'unifunc' => 'content_545c95d7c7b0e8_39660560',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_545c95d7c7b0e8_39660560')) {function content_545c95d7c7b0e8_39660560($_smarty_tpl) {?>
 <div id="main-nav">
@@ -37,7 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<a id="Menu_ModuleAdminLink" href="moduleadmin.php">Module Admin</a>
 	</li>     
 	<li>
-		<a id="Menu_StudentAdminLink" href="studentadmin.php">Student Admin</a>
+		<a id="Menu_StudentAdminLink" href="#">Student Admin</a>
 	</li>   	
 	</ul>
 </div>
