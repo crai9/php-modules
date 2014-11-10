@@ -30,39 +30,35 @@
 	
 		<div id='leftItemTemplate'>
 			{if $obj->mUpdateButtonDisplay}
-				<h3>Update Album</h3>
+				<h3>Update Module</h3>
 			{else}
-				<h3>Add New Album</h3>					
+				<h3>Add New Module</h3>					
 			{/if}		
-			<form method="post" action="admin.php">
+			<form method="post" action="moduleadmin.php">
 			{if $obj->mErrorMessage}<p class="error">{$obj->mErrorMessage}</p>{/if}
 			<div>
 				<p>
 					<label for="new_album_title">Title:</label><br />
-					<input type="text" name="new_album_title" value="{$obj->mAlbumTitle}" size="40" />
+					<input type="text" name="new_module_title" value="{$obj->mModuleTitle}" size="40" />
 				</p>
 				<p>
-					<label for="new_artist">Artist:</label><br />            
-					<input type="text" name="new_artist" value="{$obj->mArtist}" size="40" />
-				</p>
-				<p>
-					<label for="new_release_date">Release Date:</label><br /> 			
-					<input type="text" name="new_release_date" value="{$obj->mReleaseDate}" size="10" />
+					<label for="new_artist">Leader:</label><br />            
+					<input type="text" name="new_leader" value="{$obj->mLeader}" size="40" />
 				</p>
 				<p>
 					<label for="new_image">Image:</label><br />			
 					<input type="text" name="new_image" value="{$obj->mImage}" size="40" />
 				</p>
 				<p>
-					<label for="new_date_bought">Date Bought:</label><br />				
-					<input type="text" name="new_date_bought" value="{$obj->mDateBought}" size="10" />
+					<label for="new_description">Description:</label><br />				
+					<textarea rows="4" cols="50" name="new_description">{$obj->mDescription}</textarea>
 				</p>
 				<p>
 					<label for="new_category">Category:</label><br />			
 					<input type="text" name="new_category" value="{$obj->mCategory}" size="10" />
 				</p>
 				<p>
-					<input type="hidden" name="album_id" value="{$obj->mAlbumID}" />
+					<input type="hidden" name="module_id" value="{$obj->mModuleID}" />
 				</p>                          
 				<p>
 					{if $obj->mAddButtonDisplay}
@@ -75,18 +71,18 @@
 			</div>
 			</form>
 		</div>
-		{if $obj->mArtists}
+		{if $obj->mModules}
 			<div id='rightItemTemplate'>
 				<h3>Find Album to Update</h3>
-				<form method="post" action="admin.php">
+				<form method="post" action="moduleadmin.php">
 				<div>
 					<p>
 						<select name="artists">
-							<option>Select Artist</option>
+							<option>Select Leader</option>
 							{* Loop through the list of artists *}
-							{section name=i loop=$obj->mArtists}
+							{section name=i loop=$obj->mLeaders}
 								{* Generate a new artist in the list *}
-								<option value="{$obj->mArtists[i].artist}">{$obj->mArtists[i].artist}</option>
+								<option value="{$obj->mLeaders[i].module_leader}">{$obj->mLeaders[i].module_leader}</option>
 							{/section}        
 						</select>
             				</p>

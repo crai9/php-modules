@@ -26,7 +26,7 @@
 				}				
 				else
 				{				
-					$this->mLoginMessage = 'Login failed. Please try again:';
+					$this->mLoginMessage = 'Login failed. Please try again...';
 				}
 				
 			}			
