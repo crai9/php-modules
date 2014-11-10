@@ -97,7 +97,14 @@ class AdminModule
 				}
 				else
 				{
-					// Complete this line with a call to a Collection class method
+					$this->mLeader = $_POST['new_leader'];
+					$this->mModuleID = $_POST['module_id'];
+					$this->mModuleTitle = $_POST['new_module_title'];
+					$this->mImage = $_POST['new_image'];
+					$this->mDescription = $_POST['new_description'];
+					$this->mCategory = $_POST['new_category'];
+			
+					Business::UpdateModule($this->mModuleID, $this->mModuleTitle, $this->mLeader, $this->mDescription, $this->mImage, $this->mCategory);
 				}
 				header('Location: moduleadmin.php');
 			}
